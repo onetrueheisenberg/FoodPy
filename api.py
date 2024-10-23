@@ -4,6 +4,7 @@ import requests
 url = 'https://umdearborn.campuslabs.com/engage/api/discovery/event/search?endsAfter=2024-10-22T18%3A04%3A48-04%3A00&orderByField=endsOn&orderByDirection=ascending&status=Approved&take=15&benefitNames%5B0%5D=FreeFood&query='
 
 app = Flask(__name__)
+app.run(host='0.0.0.0', port=80)
 CORS(app)
 
 @app.route('/api/hello', methods=['GET'])
